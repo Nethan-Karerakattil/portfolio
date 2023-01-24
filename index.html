@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nethan Karerakattil | Portfolio</title>
+
+    <!-- Internal Styles -->
+    <link rel="stylesheet" href="./css/home.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d33678e5ec.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Scripts -->
+    <script defer src="./scripts/script.js"></script>
+</head>
+<body>
+    <header class="main">
+        <navbar>
+            <h4>Nethan Karerakattil</h4>
+
+            <div class="items">
+                <a href="#about">About me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact me</a>
+            </div>
+        </navbar>
+
+        <h1>Hi! I am Nethan</h1>
+        <h3>A Full-Stack Web Developer</h3>
+
+        <a href="#about" class="arrow"><i class="fa-solid fa-arrow-down"></i></a>
+    </header>
+
+    <content>
+        <section id="about" class="hidden">
+            <div class="image-wrapper">
+                <img class="nethan-image" src="./images/nethan.jpg" alt="">
+            </div>
+
+            <div class="about-text-wrapper">
+                <h1 class="about-title">About me</h1><hr class="title-hr">
+                <h4 class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum diam in ipsum interdum cursus vitae et nisl. Nullam eu neque at ante efficitur ultrices. Duis gravida pharetra mi maximus scelerisque.</h4>
+                <h4 class="para">Morbi sodales egestas rhoncus. Curabitur fermentum gravida arcu, at pretium nunc. Nam aliquam dignissim molestie. Ut vitae mollis nisi, ut dapibus libero.Curabitur ornare, mauris imperdiet bibendum faucibus, nulla mauris facilisis tortor, in bibendum arcu nisi in lorem.</h4>
+            </div>
+        </section>
+
+        <section class="my-knowledge hidden">
+            <div class="knowledge-icons">
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/html.png" alt="HTML Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/css-3.png" alt="CSS Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/js.png" alt="Javascript Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/python.png" alt="Python Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/nodejs.png" alt="Node.js Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/mysql.png" alt="MySQL Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/mongodb.png" alt="MongoDB Image">
+                </div>
+
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/html.png" alt="HTML Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/css-3.png" alt="CSS Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/js.png" alt="Javascript Image">
+                </div>
+                <div class="knowledge-icon-wrapper">
+                    <img class="knowledge-icon" src="./images/icons/python.png" alt="Python Image">
+                </div>
+            </div>
+
+            <div class="knowledge-text-wrapper">
+                <h1 class="knowledge-title">My Knowledge</h1><hr class="title-hr">
+                <h4 class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum diam in ipsum interdum cursus vitae et nisl. Nullam eu neque at ante efficitur ultrices. Duis gravida pharetra mi maximus scelerisque.</h4>
+                <h4 class="para">Morbi sodales egestas rhoncus. Curabitur fermentum gravida arcu, at pretium nunc. Nam aliquam dignissim molestie. Ut vitae mollis nisi, ut dapibus libero.Curabitur ornare, mauris imperdiet bibendum faucibus, nulla mauris facilisis tortor, in bibendum arcu nisi in lorem.</h4>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 class="project-title">My Work</h1>
+            <div class="project-tile-wrapper">
+                <div class="project-tile" onmouseover="projectTileHover(this)" onmouseleave="projectTileLeave(this)">
+                    <div style="background-image: url(../images/project-pictures/tindog.png);" class="project-image"></div>
+                    <div class="info">
+                        <h3>Tindog</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum diam in ipsum </p>
+                        <div class="project-button-wrapper">
+                            <a href="https://github.com/Nethan-Karerakattil/tindog" class="project-button code-button">Code</a>
+                            <a href="https://nethan-tindog.netlify.app" class="project-button live-button">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tile" onmouseover="projectTileHover(this)" onmouseleave="projectTileLeave(this)">
+                    <div style="background-image: url(../images/project-pictures/discord-bot.png);" class="project-image"></div>
+                    <div class="info">
+                        <h3>Discord Bot</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum diam in ipsum </p>
+                        <div class="project-button-wrapper">
+                            <a href="https://github.com/Nethan-Karerakattil/general-purpose-bot" class="project-button code-button">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tile" onmouseover="projectTileHover(this)" onmouseleave="projectTileLeave(this)">
+                    <div style="background-image: url(../images/project-pictures/aogiri-tree.png);" class="project-image"></div>
+                    <div class="info">
+                        <h3>Aogiri Tree</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum diam in ipsum </p>
+                        <div class="project-button-wrapper">
+                            <a href="https://github.com/Nethan-Karerakattil/Aogiri-Tree" class="project-button code-button">Code</a>
+                            <a href="https://aogiri-tree.netlify.app" class="project-button live-button">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-tile-wrapper">
+                <div class="project-tile" onmouseover="projectTileHover(this)" onmouseleave="projectTileLeave(this)">
+                    <div style="background-image: url(../images/project-pictures/chess-project.png);"  class="project-image"></div>
+                    <div class="info">
+                        <h3>Chess Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum diam in ipsum </p>
+                        <div class="project-button-wrapper">
+                            <a href="https://github.com/Nethan-Karerakattil/chess-project" class="project-button code-button">Code</a>
+                            <a href="https://my-chess-project.netlify.app/" class="project-button live-button">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#add8e6" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,96C480,117,600,203,720,240C840,277,960,267,1080,250.7C1200,235,1320,213,1380,202.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <footer>
+            <h1>Contact Me On...</h1>
+            <div class="socials">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </footer>
+    </content>
+</body>
+</html>
