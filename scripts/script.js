@@ -3,7 +3,8 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             entry.target.classList.add("show");
-            entry.target.classList.remove("hidden")
+            entry.target.classList.remove("hidden");
+            entry.target.classList.remove("hidden-right");
         } else {
             entry.target.classList.remove("show");
         }
@@ -11,6 +12,9 @@ const observer = new IntersectionObserver(entries => {
 })
 
 document.querySelectorAll(".hidden")
+    .forEach(element => observer.observe(element));
+
+document.querySelectorAll(".hidden-right")
     .forEach(element => observer.observe(element));
 
 // Project Tile Hover

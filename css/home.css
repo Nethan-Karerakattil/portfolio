@@ -3,6 +3,7 @@ body {
     background-color: #23272a;
     color: #fff;
     margin: 0;
+    overflow-x: hidden;
 
     /* Variables */
     --nav-load-time: 1.5s;
@@ -57,6 +58,10 @@ body {
 
 .hidden {
     transform: translateX(-100%);
+}
+
+.hidden-right {
+    transform: translateX(100%);
 }
 
 .show {
@@ -220,6 +225,14 @@ h1 {
 }
 
 @media screen and (max-width: 1000px) {
+    #about {
+        margin: 10% 20%;
+    }
+
+    .about-text-wrapper {
+        margin: 0;
+    }
+
     .image-wrapper {
         display: none;
     }
@@ -230,12 +243,8 @@ h1 {
 }
 
 @media screen and (max-width: 700px) {
-    #about {
-        margin: 10% 20%;
-    }
-
     .about-text-wrapper {
-        margin-right: 0;
+        margin: 0;
     }
 
     #about h1 {
@@ -333,14 +342,14 @@ h1 {
     height: 80vh;
 }
 
-.project-tile-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .project-title {
     text-align: center;
     margin-top: 100px;
+}
+
+.project-tile-wrapper {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .project-tile {
@@ -423,57 +432,51 @@ h1 {
     color: white;
 }
 
-/* Rest Of The Page */
-svg {
-    margin-bottom: -5px;
+@media screen and (max-width: 1000px) {
+    .project-tile-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-tile {
+        width: 300px;
+        height: 200px;
+    }
+
+    .project-image {
+        background-color: rgba(0, 0, 0, .75);
+        background-blend-mode: multiply;
+    }
+
+    .info {
+        transform: translateY(0);
+    }
 }
 
+/* Footer */
 footer {
+    background-color: rgba(255,255,255,0.1);
+    height: 45vh;
+    margin-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 30vh;
-    padding-bottom: 7%;
-    background-color: var(--secondary-color);
 }
 
-footer h1 {
-    margin-bottom: 60px;
-}
-
-.socials i {
-    margin: 0 5px;
-    transition: all 250ms;
-}
-
-.socials i:hover {
+.socials a {
+    margin: 10px;
+    transition: all 200ms;
     color: white;
+    text-decoration: none;
 }
 
-
-@media screen and (max-width: 1300px) {
-    .project-showcase {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    iframe {
-        width: 350px;   
-        height: 300px;
-        margin: 10px 0 10px 0;
-    }
+.socials a:hover {
+    opacity: 0.5;
 }
 
-@media screen and (max-width: 600px) {
-    .about, .tuba {
-        margin: 10% 10% 0 10%;
-        text-align: center;
-    }
-
-    iframe {
-        width: 50%;
-        height: 75%;
-        margin: 10px 0 10px 0;
+@media screen and (max-width: 1000px) {
+    footer {
+        margin-top: 700px;
     }
 }
